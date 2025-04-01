@@ -1,0 +1,73 @@
+2025-04-01 18:38:31.006 -03:00 [INF] Now listening on: http://localhost:5170
+2025-04-01 18:38:31.057 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-01 18:38:31.058 -03:00 [INF] Hosting environment: Development
+2025-04-01 18:38:31.059 -03:00 [INF] Content root path: C:\Users\Windows 10\Desktop\Prueba backend intuit\ClientesAPI\
+2025-04-01 18:38:32.284 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/swagger - -
+2025-04-01 18:38:32.447 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/swagger - - - 301 0 - 165.6554ms
+2025-04-01 18:38:32.472 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/swagger/index.html - -
+2025-04-01 18:38:33.133 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/swagger/swagger-ui-bundle.js - -
+2025-04-01 18:38:33.136 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/swagger/swagger-ui.css - -
+2025-04-01 18:38:33.141 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/_framework/aspnetcore-browser-refresh.js - -
+2025-04-01 18:38:33.146 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/_vs/browserLink - -
+2025-04-01 18:38:33.147 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/swagger/swagger-ui-standalone-preset.js - -
+2025-04-01 18:38:33.150 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/swagger/index.html - - - 200 - text/html;charset=utf-8 678.1172ms
+2025-04-01 18:38:33.150 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 8.7639ms
+2025-04-01 18:38:33.190 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-01 18:38:33.190 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/swagger/swagger-ui.css - - - 200 144929 text/css 57.6722ms
+2025-04-01 18:38:33.191 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-01 18:38:33.193 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 46.2963ms
+2025-04-01 18:38:33.226 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-01 18:38:33.227 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 94.4500ms
+2025-04-01 18:38:33.893 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 746.6342ms
+2025-04-01 18:38:34.433 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/swagger/v1/swagger.json - -
+2025-04-01 18:38:34.478 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/swagger/favicon-32x32.png - -
+2025-04-01 18:38:34.482 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-01 18:38:34.484 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/swagger/favicon-32x32.png - - - 200 628 image/png 6.3396ms
+2025-04-01 18:38:34.597 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.3062ms
+2025-04-01 19:05:21.310 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/Clientes - -
+2025-04-01 19:05:21.318 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-01 19:05:21.326 -03:00 [INF] Executing endpoint 'ClientesAPI.Controllers.ClientesController.GetAll (ClientesAPI)'
+2025-04-01 19:05:21.345 -03:00 [INF] Route matched with {action = "GetAll", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ClientesAPI.Controllers.ClientesController (ClientesAPI).
+2025-04-01 19:05:22.274 -03:00 [INF] Entity Framework Core 6.0.36 initialized 'ClientesDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-04-01 19:05:23.213 -03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ID], [c].[Apellidos], [c].[CUIT], [c].[Domicilio], [c].[Email], [c].[FechaNacimiento], [c].[Nombres], [c].[TelefonoCelular]
+FROM [Clientes] AS [c]
+2025-04-01 19:05:23.339 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ClientesAPI.Models.Cliente, ClientesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-01 19:05:23.360 -03:00 [INF] Executed action ClientesAPI.Controllers.ClientesController.GetAll (ClientesAPI) in 2007.0623ms
+2025-04-01 19:05:23.363 -03:00 [INF] Executed endpoint 'ClientesAPI.Controllers.ClientesController.GetAll (ClientesAPI)'
+2025-04-01 19:05:23.367 -03:00 [INF] HTTP GET /Clientes responded 200 in 2041.7904 ms
+2025-04-01 19:05:23.377 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/Clientes - - - 200 - application/json;+charset=utf-8 2067.0358ms
+2025-04-01 19:06:08.179 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5170/Clientes application/json 222
+2025-04-01 19:06:08.180 -03:00 [INF] Executing endpoint 'ClientesAPI.Controllers.ClientesController.Insert (ClientesAPI)'
+2025-04-01 19:06:08.202 -03:00 [INF] Route matched with {action = "Insert", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(ClientesAPI.Models.Cliente) on controller ClientesAPI.Controllers.ClientesController (ClientesAPI).
+2025-04-01 19:06:08.262 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-04-01 19:06:08.274 -03:00 [INF] Executed action ClientesAPI.Controllers.ClientesController.Insert (ClientesAPI) in 70.5458ms
+2025-04-01 19:06:08.276 -03:00 [INF] Executed endpoint 'ClientesAPI.Controllers.ClientesController.Insert (ClientesAPI)'
+2025-04-01 19:06:08.276 -03:00 [INF] HTTP POST /Clientes responded 400 in 96.1797 ms
+2025-04-01 19:06:08.277 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5170/Clientes application/json 222 - 400 - application/problem+json;+charset=utf-8 98.3471ms
+2025-04-01 19:06:31.262 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/Clientes/1 - -
+2025-04-01 19:06:31.264 -03:00 [INF] Executing endpoint 'ClientesAPI.Controllers.ClientesController.Get (ClientesAPI)'
+2025-04-01 19:06:31.267 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ClientesAPI.Controllers.ClientesController (ClientesAPI).
+2025-04-01 19:06:31.288 -03:00 [INF] Entity Framework Core 6.0.36 initialized 'ClientesDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-04-01 19:06:31.555 -03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[ID], [c].[Apellidos], [c].[CUIT], [c].[Domicilio], [c].[Email], [c].[FechaNacimiento], [c].[Nombres], [c].[TelefonoCelular]
+FROM [Clientes] AS [c]
+WHERE [c].[ID] = @__p_0
+2025-04-01 19:06:31.560 -03:00 [INF] Executing OkObjectResult, writing value of type 'ClientesAPI.Models.Cliente'.
+2025-04-01 19:06:31.562 -03:00 [INF] Executed action ClientesAPI.Controllers.ClientesController.Get (ClientesAPI) in 293.3563ms
+2025-04-01 19:06:31.564 -03:00 [INF] Executed endpoint 'ClientesAPI.Controllers.ClientesController.Get (ClientesAPI)'
+2025-04-01 19:06:31.564 -03:00 [INF] HTTP GET /Clientes/1 responded 200 in 300.3010 ms
+2025-04-01 19:06:31.565 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/Clientes/1 - - - 200 - application/json;+charset=utf-8 304.8072ms
+2025-04-01 19:07:29.398 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5170/Clientes/search?nombre=Pedro - -
+2025-04-01 19:07:29.410 -03:00 [INF] Executing endpoint 'ClientesAPI.Controllers.ClientesController.Search (ClientesAPI)'
+2025-04-01 19:07:29.414 -03:00 [INF] Route matched with {action = "Search", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(System.String) on controller ClientesAPI.Controllers.ClientesController (ClientesAPI).
+2025-04-01 19:07:29.469 -03:00 [INF] Entity Framework Core 6.0.36 initialized 'ClientesDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-04-01 19:07:29.529 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nombre_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ID], [c].[Apellidos], [c].[CUIT], [c].[Domicilio], [c].[Email], [c].[FechaNacimiento], [c].[Nombres], [c].[TelefonoCelular]
+FROM [Clientes] AS [c]
+WHERE (@__nombre_0 LIKE N'') OR (CHARINDEX(@__nombre_0, [c].[Nombres]) > 0)
+2025-04-01 19:07:29.531 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ClientesAPI.Models.Cliente, ClientesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-01 19:07:29.532 -03:00 [INF] Executed action ClientesAPI.Controllers.ClientesController.Search (ClientesAPI) in 116.8465ms
+2025-04-01 19:07:29.533 -03:00 [INF] Executed endpoint 'ClientesAPI.Controllers.ClientesController.Search (ClientesAPI)'
+2025-04-01 19:07:29.534 -03:00 [INF] HTTP GET /Clientes/search responded 200 in 123.5673 ms
+2025-04-01 19:07:29.535 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5170/Clientes/search?nombre=Pedro - - - 200 - application/json;+charset=utf-8 137.0568ms
